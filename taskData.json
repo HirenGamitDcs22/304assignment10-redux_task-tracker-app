@@ -18,7 +18,7 @@
       "id": 1,
       "uname": "hiren",
       "pwd": "1234",
-      "logedin": false
+      "logedin": true
     },
     {
       "id": 2,

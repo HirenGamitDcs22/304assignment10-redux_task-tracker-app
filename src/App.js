@@ -78,7 +78,7 @@ function App() {
     const res = await  fetch("http://localhost:5000/users")
     const usersdata=await res.json(); 
     console.log(usersdata)
-    const rec=usersdata.filter((u)=>u.uname === usersdata.uname && u.pwd === usersdata.pwd)
+    const rec=usersdata.filter((u)=>u.uname === user.uname && u.pwd === user.pwd)
     console.log(rec)
     const id=rec.map((u)=>u.id)
     console.log(id)
