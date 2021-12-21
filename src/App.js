@@ -77,17 +77,13 @@ function App() {
   const chkisLogged=async(user)=>{
     const res = await  fetch("http://localhost:5000/users")
     const usersdata=await res.json(); 
-    console.log(usersdata)
     const rec=usersdata.filter((u)=>u.uname === user.uname && u.pwd === user.pwd)
-    console.log(rec)
     const id=rec.map((u)=>u.id)
-    console.log(id)
     const res1=await fetch(`http://localhost:5000/users/${id[0]}`);
     const data=await res1.json();
     const r=dispatch(actions.featchuser(data))
     const users=r.user;
     const updateUser={...users,logedin:!users.logedin}
-    console.log(updateUser);
     const res2=await fetch(`http://localhost:5000/users/${users.id}`,{
       method:'PUT',
       headers: {'Content-Type': 'application/json'},
@@ -95,7 +91,6 @@ function App() {
     })
     const data1 = await res2.json();
     const rec1=dispatch(actions.updateUser(data1,users.id))
-    console.log(rec1);
   }
   //Login
   const login=(logindata)=>{
