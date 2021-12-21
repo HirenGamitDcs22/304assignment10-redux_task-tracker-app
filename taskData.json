@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "text": "My Birth Day",
+      "day": "jan 14 12:00  am",
+      "reminder": true,
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "uname": "hiren",
+      "pwd": "1234",
+      "logedin": false
+    },
+    {
+      "id": 2,
+      "uname": "ami",
+      "pwd": "1234",
+      "logedin": false
+    }
+  ]
+}
