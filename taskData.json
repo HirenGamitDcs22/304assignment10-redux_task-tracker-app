@@ -5,6 +5,12 @@
       "day": "jan 14 12:00  am",
       "reminder": true,
       "id": 1
+    },
+    {
+      "text": "hh",
+      "day": "hh",
+      "reminder": false,
+      "id": 2
     }
   ],
   "users": [
