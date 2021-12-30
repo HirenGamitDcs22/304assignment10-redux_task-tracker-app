@@ -55,9 +55,7 @@ function App() {
     setTasks(await stateTask)
   }
 
-  const featchTask=async(id)=>{
-    const res=await fetch(`http://localhost:5000/tasks/${id}`);
-    const data=await res.json();
+  const featchTask=()=>{
     return dispatch(actions.featchTask(data)).payload;
   }
   //Toggle
